@@ -29,11 +29,6 @@ function App() {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          background: {
-            color: {
-              value: "#0d47a1",
-            },
-          },
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -65,7 +60,7 @@ function App() {
               color: "#ffffff",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.1,
               width: 1,
             },
             collisions: {
