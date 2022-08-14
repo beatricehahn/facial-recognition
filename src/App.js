@@ -1,16 +1,13 @@
 import React from 'react';
-import Clarifai from 'clarifai';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import Navigation from './components/Navigation/Navigation';
+import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
-const app = new Clarifai.App({
-  apiKey: '06e226a3d5544e258ca3aea5c7b2632'
-});
 
 function App() {
   const particlesInit = async (main) => {
@@ -24,6 +21,7 @@ function App() {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+  
 
   return (
     <div className="App">
@@ -104,7 +102,7 @@ function App() {
       <Logo />
       <Rank />
       <ImageLinkForm/>
-      {/*<FaceRecognition />*/}
+      <FaceRecognition />
     </div>
   );
 }

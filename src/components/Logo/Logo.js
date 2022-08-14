@@ -8,7 +8,7 @@ const Logo = () => {
         <div className='outerDiv ma4 mt0'>
             <Tilt className="br2 shadow-2">
                 <div className=" innerDiv">
-                    <img className="faceLogo" src={face}/>
+                    <img className="faceLogo" src={face} alt=""/>
                 </div>
             </Tilt>
         </div>
